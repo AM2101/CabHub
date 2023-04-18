@@ -1,0 +1,589 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Mar 27, 2023, 8:56:02 PM
+    Author     : Mr. Mittal
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .2s linear;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+
+
+nav,footer{
+    font-size:1.7em;
+}
+
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.main-container{
+    background: url(../images/background.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2rem 7%;
+    align-items: center;
+}
+.header .navbar a{
+    font-size: 1.7rem;
+    margin-left: 1rem;
+    color: white;
+    text-decoration: none;
+}
+.header .navbar a:hover{
+    background: #ffc61a;
+    padding: .5rem 3rem;
+    border-radius: 15px;
+}
+#menu-bars{
+    color: white;
+    font-size: 2rem;
+    display: none;
+
+}
+.navbar.active{
+    top: 10%;
+}
+
+.background-text h2{
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.background-text h2 span{
+    color: #ffc61a;
+}
+.taxi-image{
+    width: 50%;
+    margin: 0 auto;
+}
+.taxi-image img{
+    width: 100%;
+    margin-top: 260px;
+}
+.home-container{
+    background: #ffc61a;
+    padding: 2rem 7%;
+    width: 100%;
+    padding-top: 4rem;
+    
+}
+.home-content{
+    padding-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  
+}
+.inner-content{
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+.inner-content h3{
+    font-size: 31px;
+}
+.inner-content h2{
+    font-size: 38px;
+}
+.inner-content p{
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+.inner-content .booknow{
+    padding: 1rem 3rem;
+    color: black;
+    font-size: 1.5rem;
+    border: 1px solid black;
+}
+.inner-content .booknow:hover{
+padding: 1.5rem 3rem;
+border: 1px solid white;
+border-radius: 15px;
+background: white;
+}
+.form-heading{
+    text-align: center;
+    background: black;
+    padding: 2rem 0;
+}
+.form-heading h1{
+    color: white;
+}
+.contact-form{
+    width: 45rem;
+    background: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+}
+.form-fields input,select
+{
+    font-size: 1.4em;
+    padding: 1.2rem ;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.contact-form .showcar{
+    background: black;
+    width: 100%;
+    display: inline-block;
+    padding: 2rem 0;
+    color: white;
+    font-size: 1.5rem;
+    
+}
+.submit{
+    padding-top: 2rem;
+
+}
+.main-tariff{
+    padding: 3rem 7%;
+   
+   
+}
+.main-tariff h1{
+    font-size: 38px;
+    text-align: center;
+    padding-bottom: 6rem;
+}
+.main-tariff h1 span{
+    color: #ffc61a;
+}
+.inner-tarrif{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+.tarrif-container{
+    flex: 1 1 250px;
+    text-align: center;
+    padding: 3rem 0;
+}
+.tarrif-container img{
+    width: 60%;
+    margin-top: -50px;
+}
+.tarrif-container .inner-box h2{
+    font-size: 30px;
+}
+.tarrif-container .inner-box p{
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+.tarrif-container .inner-box h3{
+    color: black;
+    font-size: 2rem;
+}
+
+.tarrif-container .inner-box a{
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+
+}
+.tarrif-container:nth-child(even){
+    background: #ffc61a;
+}
+.heading-yellow{
+    color: black;
+}
+.yellw-section{
+    color: black !important;
+}
+.tarrif-container a{
+    color: white;
+    padding: 1rem 3rem;
+    background: black;
+    display: inline-block;
+    margin-top: 1rem;
+
+}
+.fast-booking{
+    background: url(../images/secbg.png);
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+}
+.fast-booking .fast-hading{
+    color: #ffc61a;
+    font-size: 38px;
+    text-align: center;
+    padding-top: 2rem;
+}
+.fast-booking  h2{
+    font-size: 31px;
+    color: white;
+    text-align: center;
+}
+.inner-fast{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 3rem 7%;
+    align-items: center;
+}
+.booking-content{
+    flex: 1 1 45rem;
+}
+.booking-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.inner-fast-text h1{
+    font-size: 22px;
+    color: #ffc61a;
+    padding: 2rem;
+}
+.inner-fast-text p{
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+.icon-fast{
+    background-color: #ffc61a;
+    width: 50px;
+    height: 40px;
+    border-radius: 150px;
+    text-align: center;
+}
+.icon-fast span i{
+    line-height: 40px;
+    font-size: 1.5rem;
+}
+
+.testimonials{
+    background: url(../images/testimonial\ back.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+.testimonials .heading-test{
+    color: #ffc61a;
+    font-size: 38px;
+    padding: 2rem;
+    text-align: center;
+}
+.main-testimonials{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 2rem 7%;
+}
+.inner-test{
+    flex: 1 1 45rem;
+    color: white;
+    background: black;
+    padding: 2rem;
+}
+.inner-test p{
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+.clients{
+    display: flex;
+    align-items: center;
+
+}
+.clients h1{
+    color: #ffc61a;
+    margin-left: 1rem;
+}
+
+
+
+
+/* footer */
+
+
+#container{
+    width: 100%;
+    height: 330px;
+}
+#part1{
+    width: 100%;
+    height: 280px;
+    background-color: #ffc61a;
+}
+#part2{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    position: relative;
+    top: -15px;
+}
+#companyinfo{
+    width: 14%;
+    height: 280px;
+    position: relative;
+    left: 8%;
+    top: 30px;
+}
+#sitelink{
+    font-size: 35px;
+    color: #f44336;
+}
+#sitelink:hover{
+    color: #e65100;
+}
+#title{
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 0px;
+    font-size: 14.1px;
+}
+#detail{
+    color: #000000;
+    font-size: 16px;
+}
+#explore{
+    width: 14%;
+    height: 280px;
+    position: relative;
+    top: -235px;
+    left: 29%;
+}
+#txt1, #txt2, #txt3, #txt4, #txt5{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+.link{
+    display: flex;
+    width: 90px;
+    height: 40px;
+    color: #000000;
+    background-color: transparent;
+    border-top: 2px solid white;
+    position: relative;
+    top: 10px;
+}
+.link:hover, .link1:hover{
+    color: #e65100;
+}
+#visit{
+    width: 14%;
+    height: 280px;
+    position: relative;
+    top: -515px;
+    left: 42%;
+}
+.text{
+    color: #000000;
+    font-size: 14px;
+    margin-top: 10px;
+}
+#legal{
+    width: 14%;
+    height: 280px;
+    position: relative;
+    top: -800px;
+    left: 59.5%;
+}
+.link1{
+    display: flex;
+    width: 150px;
+    height: 40px;
+    color: #000000;
+    background-color: transparent;
+    border-top: 2px solid white;
+    position: relative;
+    top: 10px;
+    margin-top: 7px;
+}
+#subscribe{
+    position: relative;
+    top: -1080px;
+    left: 78%;
+    width: 14%;
+    height: 280px;
+}
+#email{
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 20px;
+}
+.btn{
+    position: relative;
+    top: -10px;
+}
+#txt5{
+    position: relative;
+    top: 0px;
+}
+.social{
+    position: relative;
+    top: -5px;
+    margin-right: 10px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+.fa-facebook-square:hover{
+    color: #3B579D;
+}
+.fa-linkedin:hover{
+    color: #007BB6;
+}
+.fa-twitter-square:hover{
+    color: #2CAAE1;
+}
+#txt6{
+    color: white;
+    position: relative;
+    top: 13px;
+    left: 8%;
+    width: 80%;
+    color: #aaa7a7;
+}
+.material-icons{
+    position: relative;
+    top: 3px;
+}
+@media only screen and (max-width:1000px){
+    #companyinfo{
+        width: 20%;
+    }
+    #sitelink{
+        font-size: 30px;
+    }
+    #txt5, #txt4{
+        font-size: 17px;
+    }
+    #txt5, .social{
+        position: relative;
+        top: -5px;
+    }
+}
+@media only screen and (max-width:850px){
+    #companyinfo{
+        position: relative;
+        left: 3%;
+    }
+    #txt6{
+        position: relative;
+        left: 3%;
+    }
+    #txt1, #txt2, #txt3, #txt4, #txt5{
+        font-size: 15px;
+    }
+    #explore{
+        position: relative;
+        top: -240px;
+        left: 26%;
+    }
+    #sitelink{
+        font-size: 25px;
+    }
+    #detail{
+        font-size: 13px;
+    }
+    .link{
+        width: 60px;
+    }
+    #visit{
+        position: relative;
+        top: -520px;
+        left: 37%;
+    }
+    .text{
+        font-size: 13px;
+    }
+    #legal{
+        position: relative;
+        top: -800px;
+        left: 54%;
+    }
+    #subscribe{
+        position: relative;
+        top: -1080px;
+        left: 76%;
+        width: 20%;
+    }
+    #txt5, .social{
+        position: relative;
+        left: -110%;
+        top: px;
+    }
+    #email, .btn{
+        position: relative;
+        top: 0px;
+    }
+    #part1{
+        height: 250px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:768px) {
+    html{
+        font-size: 50%;
+    }
+    #menu-bars{
+        display: initial;
+    
+    }
+    .navbar{
+        position: absolute;
+        top: -100%;
+        right: 0;
+        left: 0;
+    }
+    .navbar a{
+        display: block;
+        font-size: 1.5rem;
+        background: #ffc61a;
+        margin: 1rem;
+        padding: 1rem;
+
+    }
+    .header{
+        padding: 2rem;
+    }
+    .tarrif-container{
+        padding-bottom: 4rem;
+    }
+    .tarrif-container img{
+        width: 60%;
+        margin-top: 0px;
+    }
+    .background-text h2{
+        width: 100%;
+        text-align: center;
+    }
+}
